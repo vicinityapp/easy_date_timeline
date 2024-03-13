@@ -45,7 +45,7 @@ class _EasyMonthSwitcherState extends State<EasyMonthSwitcher> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 275,
+      width: 325,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
