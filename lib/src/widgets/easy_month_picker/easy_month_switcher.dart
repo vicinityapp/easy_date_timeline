@@ -66,8 +66,8 @@ class _EasyMonthSwitcherState extends State<EasyMonthSwitcher> {
             ),
           ),
           Expanded(
-            child: FittedBox(
-              fit: BoxFit.fill,
+            child: Container(
+              alignment: Alignment.center,
               child: Text(
                 _yearMonths[_currentMonth].name,
                 textAlign: TextAlign.center,
