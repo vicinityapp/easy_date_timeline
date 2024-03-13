@@ -7,7 +7,14 @@ import 'utils.dart';
 abstract class EasyDateUtils {
   /// Returns the number of days in the month of the given date.
   static int getDaysInMonth(DateTime date) {
-    return DateUtils.getDaysInMonth(date.year, date.month);
+    DateTime today = DateTime.now();
+    int totalDays = DateUtils.getDaysInMonth(date.year, date.month);
+
+    if (today.year == date.year && today.month == date.month) {
+      return totalDays - today.day + 1;
+    }
+
+    return totalDays;
   }
 
   /// Returns whether the given two dates represent the same day or not.
